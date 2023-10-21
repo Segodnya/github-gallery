@@ -1,0 +1,32 @@
+.list-header {
+  font-family: Rubik, sans-serif;
+  font-size: 50px;
+  color: var(--primary-text-color);
+  margin: 60px 0;
+  width: 940px;
+  text-align: center;
+}
+
+.list-container {
+  background-color: var(--list-background-color);
+  height: 100vh;
+  align-items: center;
+}
+
+@media (width <= 940px) {
+  .list-header {
+    font-size: 30px;
+    text-align: left;
+    width: 664px;
+  }
+}
+
+@media (width <= 664px) {
+  .list-container {
+    width: 100%;
+  }
+  .list-header {
+    padding: 0 10px;
+    width: auto;
+  }
+}

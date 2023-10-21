@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Rubik:wght@700&display=swap");
+
+:root {
+  --list-background-color-dark: #262a2f;
+  --list-background-color-light: #fff;
+  --slider-background-color-dark: #1e2028;
+  --slider-background-color-light: #eaeaea;
+  --primary-text-color-dark: #fff;
+  --primary-text-color-light: #262a2f;
+  --header-text-color: #0083fc;
+  --primary-skeleton-color: #b5b5b5;
+  --slider-background-color: var(--slider-background-color-light);
+  --list-background-color: var(--list-background-color-light);
+  --primary-text-color: var(--primary-text-color-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --slider-background-color: var(--slider-background-color-dark);
+    --list-background-color: var(--list-background-color-dark);
+    --primary-text-color: var(--primary-text-color-dark);
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
